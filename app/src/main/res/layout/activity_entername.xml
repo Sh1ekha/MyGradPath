@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogPage"
+    android:padding="20dp"
+    android:background="@drawable/backg1">
+
+    <ImageView
+        android:id="@+id/miniLo"
+        android:layout_width="265dp"
+        android:layout_height="283dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/minilo" />
+
+
+    <TextView
+        android:id="@+id/wonderful"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:fontFamily="casual"
+        android:text="Enter your beautiful name:"
+        android:textColor="#100E0E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/miniLo"
+        android:layout_marginTop="73dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="7dp"
+        android:hint="Name" />
+
+    <Button
+        android:id="@+id/conti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText"
+        android:layout_marginTop="42dp"
+        android:background="#00BDE4"
+        android:text="Continue!"
+        android:textSize="22dp"
+
+        />
+
+    <Button
+        android:id="@+id/backbutton2"
+        android:layout_width="79dp"
+        android:layout_height="34dp"
+        android:background="#00BDE4"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+
+
+
+
+</RelativeLayout>
